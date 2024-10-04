@@ -1,0 +1,13 @@
+html {
+    background-color: rgb(9, 21, 60);
+    color: #fff;
+    padding: 10px;
+}
+
+a {
+    margin-right: 15px;
+}
+#quot1{
+    font-style: italic;
+    color: bisque;
+}
