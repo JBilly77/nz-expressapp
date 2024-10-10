@@ -5,7 +5,15 @@ html
      link(rel="stylesheet", href="style.css")
      script(src="/myscript.js") 
     body
-     a(href='/home') HOME
+     a(href='/') HOME
      a(href='/about') About
      h1='The Page is Under Construction'
+     h2 #{name} Quotes 
      h5#quot1='“If at first you don’t succeed, that’s about average for a construction project.” — Sam “The Sledgehammer” Stevens'
+
+    form(action='/catalog', method='POST')
+        label Text:
+        input(type='text', name='text1', value='')
+        input(type='submit', value='Submit')
+
+        p You entered #{text1}
