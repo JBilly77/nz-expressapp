@@ -33,7 +33,9 @@ app.post('/catalog', (req, res) => {
     console.log("Success!");
 });
 
-
+app.get('/download', (req, res) => {
+    res.download('./public/tnnovation.png')
+});
 
 
 app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
